@@ -16,13 +16,13 @@
 
         <asp:Label id="lblText" runat="server" text="Seach User"></asp:Label>
         <asp:TextBox id="txtName" runat="server"></asp:TextBox>
-        <asp:Button runat="server" id="seaching" text="Seach"/>
+        <asp:Button id="Button1" Text="Seach" runat="server"/>
             </div>
 </head>
 <body>
     <table border="1">
         <tr>
-            <td>Name</td><td>Re</td><td> <asp:TextBox id="table" runat="server"></asp:TextBox></td>
+            <td>Name</td><td>Re</td><td> <asp:TextBox id="tabel" runat="server"></asp:TextBox></td>
 
         </tr>
       
