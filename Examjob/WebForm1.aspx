@@ -26,7 +26,7 @@
 
     <div runat="server" class="jumbotron text-center">
        <asp:Table runat="server" BackColor="White" BorderColor="Black" BorderWidth="1px" ForeColor="Black" HorizontalAlign="Center">
-        <asp:TableHeaderRow>
+        <asp:TableHeaderRow BackColor="White" BorderColor="Black" BorderWidth="1px" ForeColor="Black">
             <asp:TableHeaderCell><h2>name</h2></asp:TableHeaderCell>
         </asp:TableHeaderRow>
            <asp:TableRow>
