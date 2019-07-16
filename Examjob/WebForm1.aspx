@@ -24,13 +24,13 @@
 
 
 
-    <div  id ="table" runat="server" class="container" color="Blue">
+    <div runat="server" class="jumbotron text-center">
        <asp:Table runat="server" BackColor="White" BorderColor="Black" BorderWidth="1px" ForeColor="Black" HorizontalAlign="Center">
         <asp:TableHeaderRow>
-            <asp:TableHeaderCell><h2>Name</h2></asp:TableHeaderCell>
+            <asp:TableHeaderCell><h2>name</h2></asp:TableHeaderCell>
         </asp:TableHeaderRow>
            <asp:TableRow>
-               <asp:TableCell ID="usertext" Text="username"></asp:TableCell>
+               <asp:TableCell ID="usertext" Text=""></asp:TableCell>
            </asp:TableRow>
            
        </asp:Table>

@@ -65,10 +65,13 @@ namespace Examjob
           
             if (!string.IsNullOrEmpty(seach)) { 
            GET("https://api.github.com/search/users?q="+seach);
+
                 String alluser="";
                 for(int i = 0; i < r.total_count - 1; i++)
                 {
-                    alluser = alluser + r.items.ElementAt(i).login + "<br>";
+    
+
+                    alluser = alluser+"<a href='"+r.items.ElementAt(i).html_url +"' >" + r.items.ElementAt(i).login+ "</a>" + "<br>";
                 }
                 usertext.Text =alluser ;
         }   
