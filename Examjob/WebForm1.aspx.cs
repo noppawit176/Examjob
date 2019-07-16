@@ -65,8 +65,13 @@ namespace Examjob
           
             if (!string.IsNullOrEmpty(seach)) { 
            GET("https://api.github.com/search/users?q="+seach);
-                this.tabel.Text = r.items.ElementAt(0).login; 
-            }
+                String alluser="";
+                for(int i = 0; i < r.total_count - 1; i++)
+                {
+                    alluser = alluser + r.items.ElementAt(i).login + "<br>";
+                }
+                usertext.Text =alluser ;
+        }   
             else { Response.Write("insert text for search"); }
              }
 
@@ -79,7 +84,7 @@ namespace Examjob
             string json = wc.DownloadString(url);
             JObject Rjson = JObject.Parse(json);
             r = JsonConvert.DeserializeObject<RootObject>(json);
-            Response.Write(r.items.ElementAt(0).login);
+            Response.Write(r.total_count);
 
 
         }

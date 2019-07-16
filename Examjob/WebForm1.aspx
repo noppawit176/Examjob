@@ -20,13 +20,22 @@
             </div>
 </head>
 <body>
-    <table border="1">
-        <tr>
-            <td>Name</td><td>Re</td><td> <asp:TextBox id="tabel" runat="server"></asp:TextBox></td>
 
-        </tr>
+
+
+
+    <div  id ="table" runat="server" class="container" color="Blue">
+       <asp:Table runat="server" BackColor="White" BorderColor="Black" BorderWidth="1px" ForeColor="Black" HorizontalAlign="Center">
+        <asp:TableHeaderRow>
+            <asp:TableHeaderCell><h2>Name</h2></asp:TableHeaderCell>
+        </asp:TableHeaderRow>
+           <asp:TableRow>
+               <asp:TableCell ID="usertext" Text="username"></asp:TableCell>
+           </asp:TableRow>
+           
+       </asp:Table>
       
-    </table>
+    </div>
        </form>
 </body>
 </html>

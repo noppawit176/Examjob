@@ -40,12 +40,21 @@ namespace Examjob {
         protected global::System.Web.UI.WebControls.Button Button1;
         
         /// <summary>
-        /// tabel control.
+        /// table control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tabel;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl table;
+        
+        /// <summary>
+        /// usertext control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TableCell usertext;
     }
 }
